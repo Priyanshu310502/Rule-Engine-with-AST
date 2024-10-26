@@ -1,4 +1,4 @@
-Real-Time Rule Engine for Business Logic Processing
+**Real-Time Rule Engine for Business Logic Processing
 Overview
 This project implements a real-time rule engine that allows users to define, combine, and evaluate business logic rules dynamically. The engine parses rules into Abstract Syntax Trees (ASTs) for efficient processing and supports various operators like AND, OR, greater-than, less-than, and equality.
 
@@ -18,13 +18,17 @@ Project Structure
 bash
 Copy code
 .
+
+**
 ├── app.py                  # Main application script
 ├── rules.py                # Rule parsing and AST generation
 ├── models.py               # Node structure for AST
 ├── requirements.txt        # Python dependencies
 ├── README.md               # Project documentation
 └── tests                   # Contains test cases for various functionalities
-    └── test_rules.py
+    └── test_rules.py**
+
+    
 Getting Started
 Prerequisites
 Python 3.8+
@@ -126,12 +130,14 @@ Consider a scenario where an e-commerce company needs to determine user eligibil
 Known Issues and Limitations
 Nested Expressions: Highly nested rules may result in deeper ASTs, affecting performance.
 Condition Validation: Ensure data types match for operands (e.g., numeric values for salary/age).
+
 Future Enhancements
 UI for Rule Creation: A user-friendly interface for creating and testing rules.
+
 Caching for Performance: Caching frequently used ASTs to improve evaluation time.
+
 Machine Learning Integration: Enable rule-based learning to adjust conditions dynamically.
-License
-This project is licensed under the MIT License. See LICENSE for details.
+
 
 Author
-[Your Name] - [Your Contact Information]
+Priyanshu Kumawat**
