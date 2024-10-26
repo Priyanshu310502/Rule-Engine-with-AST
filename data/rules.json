@@ -1,0 +1,11 @@
+[
+    {
+        "rule": "((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)",
+        "description": "This rule checks if age is greater than 30 for Sales or less than 25 for Marketing, along with salary and experience conditions."
+    },
+    {
+        "rule": "((age > 30 AND department = 'Marketing')) AND (salary > 20000 OR experience > 5)",
+        "description": "This rule checks if age is greater than 30 specifically for Marketing, along with salary and experience conditions."
+    }
+]
+
