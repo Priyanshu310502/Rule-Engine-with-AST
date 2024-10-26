@@ -93,14 +93,63 @@ Response
         "operator": "AND",
         "left": {
             "node_type": "operator",
-            ...
+            "operator": "OR",
+            "left": {
+                "node_type": "operator",
+                "operator": "AND",
+                "left": {
+                    "node_type": "operand",
+                    "value": "age"
+                },
+                "right": {
+                    "node_type": "operand",
+                    "value": "Sales"
+                }
+            },
+            "right": {
+                "node_type": "operator",
+                "operator": "AND",
+                "left": {
+                    "node_type": "operand",
+                    "value": "age"
+                },
+                "right": {
+                    "node_type": "operand",
+                    "value": "Marketing"
+                }
+            }
         },
         "right": {
             "node_type": "operator",
-            ...
+            "operator": "OR",
+            "left": {
+                "node_type": "operator",
+                "operator": ">",
+                "left": {
+                    "node_type": "operand",
+                    "value": "salary"
+                },
+                "right": {
+                    "node_type": "operand",
+                    "value": "50000"
+                }
+            },
+            "right": {
+                "node_type": "operator",
+                "operator": ">",
+                "left": {
+                    "node_type": "operand",
+                    "value": "experience"
+                },
+                "right": {
+                    "node_type": "operand",
+                    "value": "5"
+                }
+            }
         }
     }
 }
+
 ```
 ### 2. Combine Rules
 - **Endpoint**: `POST /combine_rules`
